@@ -30,7 +30,14 @@
                             <outlet property="delegate" destination="xDQ-V6-h4I" id="CmT-IG-n52"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDoEy" id="oeL-eG-b7v"/>
+                    <navigationItem key="navigationItem" title="ToDoEy" id="oeL-eG-b7v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uo8-ic-Qde">
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="xDQ-V6-h4I" id="Tuf-mP-vgM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlP-7y-2B0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +69,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
