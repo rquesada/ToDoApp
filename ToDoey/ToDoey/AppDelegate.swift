@@ -7,10 +7,10 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Print sandbox directory
         print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
+        
+        do{
+            _ = try Realm()
+        }catch{
+            print("Error initialising Realm, \(error)")
+        }
         return true
     }
 
