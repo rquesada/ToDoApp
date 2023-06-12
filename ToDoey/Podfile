@@ -6,6 +6,7 @@ target 'ToDoey' do
   use_frameworks!
 
   # Pods for ToDoey
-pod 'RealmSwift'
+  pod 'RealmSwift'
+  pod 'SwipeCellKit'
 
 end
